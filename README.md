@@ -1,5 +1,14 @@
 # dio-ng-221207-d1-blog
+
 Resultado do desafio "Criando um Blog com Angular" do curso "Começando no Framework Angular" da Digital Innovation One.
+
+## Web design
+
+O design foi ~~roubado~~ inspirado do mesmo trabalho usado no curso.
+
+Página do design do autor original:
+>[Blog Layout, por Dwinawan](https://dribbble.com/shots/18089191-Blog-Layout)\
+>https://dribbble.com/shots/18089191-Blog-Layout
 
 ## Assets
 
