@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { POSTS } from '../data/mock-posts';
 import { IPost } from '../model/i-post';
+import { Observable, of } from 'rxjs';
 
 const FEATURED_CATEGORY_NAME = 'Featured';
 
@@ -11,11 +12,12 @@ export class BlogService {
 
   constructor() { }
 
-  getPosts(): IPost[] {
-    return POSTS;
+  getPosts(): Observable<IPost[]> {
+    const posts = of(POSTS);
+    return posts;
   }
 
-  getFeaturedPosts(limitCount: number = 5): IPost[] {
+  getFeaturedPosts(limitCount: number = 5): Observable<IPost[]> {
     let featuredPosts: IPost[] = [];
     POSTS.map(post => {
       if (
@@ -26,7 +28,7 @@ export class BlogService {
         featuredPosts.push(post);
       }
     });
-    return featuredPosts;
+    return of(featuredPosts);
   }
 
 }
