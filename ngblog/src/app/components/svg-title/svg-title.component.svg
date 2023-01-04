@@ -1,0 +1,4 @@
+<svg class="svg-title" [attr.height]="height" [attr.width]="width" [attr.viewBox]="viewBox">
+    <text #textId x="0" y="0" fill="inherit" font-size="inherit" dominant-baseline="text-before-edge"
+    >{{text}}</text>
+</svg>

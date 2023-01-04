@@ -1,0 +1,23 @@
+:host{
+    position: relative;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+}
+.svg-title {
+    fill: inherit;
+    background-color: transparent;
+    font-size: 16px;
+    /*
+    ⚠ Montserrat, no tamanho de 16px,
+    possui a âncora do texto a 1px do
+    início do desenho do símbolo.
+    -1% e 101% são quase ⚞números mágicos!⚟
+    */
+    margin-left: -1%;
+    width: 101%;
+    height: auto;
+}

@@ -1,0 +1,37 @@
+<header class="main-header">
+    <div class="brand">
+        <img src="/assets/img/brand-logo-placeholder-116x128px.png" alt="Brand Logo Ltd." class="logo">
+        <div class="text">place<br>holder</div>
+    </div>
+    <nav class="main-nav" [class.-visible]="isMainMenuButtonActived" (click)="onMainNavItemClick()">
+        <div class="menu">
+            <a class="link" routerLink="">Início</a>
+            <a class="link" routerLink="/categories">Categorias</a>
+            <a class="link" routerLink="/about">Sobre</a>
+            <a class="link" routerLink="/contact">Contato</a>
+        </div>
+        <div class="social">
+            <a class="link" href="https://twitter.com/PR0GRAMMERHUM0R" target="_blank">
+                <img src="/assets/img/twitter-03-128px.svg" alt="Twitter" class="icon">
+                <span class="text">Twitter</span>
+            </a>
+            <a class="link" href="https://www.instagram.com/quoteoftheday/" target="_blank">
+                <img src="/assets/img/instagram-02-128px.svg" alt="Instagram" class="icon">
+                <span class="text">Instagram</span>
+            </a>
+            <a class="link" href="https://www.webdesignmuseum.org/exhibitions/bad-and-ugly-websites" target="_blank">
+                <img src="/assets/img/soccer-ball-01-128px.svg" alt="Dibbbre: Tão dexando a gente sonhá!" class="icon">
+                <span class="text">Dibbbre</span>
+            </a>
+            <a class="link" href="https://github.com/iraja-baltezan/dio-ng-221207-d1-blog" target="_blank">
+                <img src="/assets/img/github-02-128px.svg" alt="Github" class="icon">
+                <span class="text">Github</span>
+            </a>
+        </div>
+    </nav>
+    <button class="main-menu-button" [class.-actived]="isMainMenuButtonActived" (click)="onMainMenuButtonClick()">
+        <span class="text">
+            Menu
+        </span>
+    </button>
+</header>

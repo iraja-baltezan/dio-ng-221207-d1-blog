@@ -1,0 +1,15 @@
+<article class="thumbnail {{cssSize}}">
+    <h1 class="title">
+        <app-svg-title *ngIf="titleSvg" [text]="titleSvg"></app-svg-title>
+        <b>{{title}}</b>
+    </h1>
+    <div class="featuredimg">
+        <img [attr.src]="post.featuredImgUrl" alt="{{titleSvg}} {{title}}" class="img">
+    </div>
+    <p class="body">
+        {{excerpt}}
+    </p>
+    <div class="datetime">
+        Setembro 03, 2022
+    </div>
+</article>
