@@ -1,0 +1,19 @@
+.button-link {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+
+    .icon {
+        display: inline-flex;
+        height: 24px;
+        width: 24px;
+    }
+    .content {
+        padding-top: 1px;
+    }
+}

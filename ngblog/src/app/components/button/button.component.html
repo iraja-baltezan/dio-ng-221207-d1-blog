@@ -1,0 +1,8 @@
+<a class="button-link" [routerLink]="routerLink">
+    <img
+        class="icon"
+        *ngIf="iconSrc"
+        [attr.src]="[iconSrc]"
+    />
+    <span class="content"><ng-content></ng-content></span>
+</a>
