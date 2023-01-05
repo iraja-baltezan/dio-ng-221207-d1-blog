@@ -1,4 +1,4 @@
-<article class="thumbnail {{cssSize}}">
+<article class="thumbnail {{cssSize}}" [routerLink]="['/post', post.id]">
     <h1 class="title">
         <app-svg-title *ngIf="titleSvg" [text]="titleSvg"></app-svg-title>
         <b>{{title}}</b>
@@ -7,9 +7,9 @@
         <img [attr.src]="post.featuredImgUrl" alt="{{titleSvg}} {{title}}" class="img">
     </div>
     <p class="body">
-        {{excerpt}}
+        {{post.body | postExcerpt:100}}
     </p>
     <div class="datetime">
-        Setembro 03, 2022
+        {{post.updatedAt}}
     </div>
 </article>

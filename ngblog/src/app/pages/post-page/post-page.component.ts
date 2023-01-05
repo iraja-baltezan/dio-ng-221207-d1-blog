@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { POSTS } from 'src/app/data/mock-posts';
 import { IPost } from 'src/app/model/i-post';
 
 @Component({
@@ -6,13 +7,11 @@ import { IPost } from 'src/app/model/i-post';
   templateUrl: './post-page.component.html',
   styleUrls: ['./post-page.component.scss']
 })
-export class PostPageComponent implements IPost {
-  id: number = 0;
-  body: string = '';
-  featuredImgUrl: string = '';
-  author: string = '';
-  categories: string[] = [];
-  createdAt: string = '';
-  updatedAt: string = '';
-  title: string = '';
+export class PostPageComponent {
+
+  post: IPost = POSTS[0];
+
+  ngOnInit(){
+
+  }
 }

@@ -1,9 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IPost } from 'src/app/model/i-post';
 
-// Número de caracteres extraídos do corpo da postagem.
-const EXCERPT_LENGTH = 100;
-
 @Component({
   selector: 'app-post-thumbnail',
   templateUrl: './post-thumbnail.component.html',
@@ -29,7 +26,6 @@ export class PostThumbnailComponent {
   cssSize: string = '-size' + this.size;
   title: string = '';
   titleSvg: string = '';
-  excerpt: string = '';
 
   ngOnInit(){
     if (this.size == 0){
@@ -47,9 +43,5 @@ export class PostThumbnailComponent {
       this.title = this.post.title;
     }
     this.cssSize = '-size' + Math.min(this.size, 6);
-
-    if (this.post.body.length > EXCERPT_LENGTH){
-      this.excerpt = this.post.body.substring(0, EXCERPT_LENGTH) + '...';
-    }
   }
 }

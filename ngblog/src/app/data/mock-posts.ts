@@ -8,8 +8,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/11/800/450",
         author: "Terry Medhurst",
         categories: ['Featured', 'A life full of love'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 2,
@@ -18,8 +18,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/12/800/450",
         author: "Sheldon Quigley",
         categories: ['Featured', 'The beauty of simplicity'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 3,
@@ -28,8 +28,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/13/800/450",
         author: "Terrill Hills",
         categories: ['Featured', 'The joy of family'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 4,
@@ -38,8 +38,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/14/800/450",
         author: "Miles Cummerata",
         categories: ['Finding peace in nature'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 5,
@@ -48,8 +48,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/15/800/450",
         author: "Mavis Schultz",
         categories: ['Featured', 'Finding peace in nature'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 6,
@@ -58,8 +58,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/16/800/450",
         author: "Alison Reichert",
         categories: ['A life full of love'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 7,
@@ -68,8 +68,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/17/800/450",
         author: "Oleta Abbott",
         categories: ['Featured', 'The joy of family'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 8,
@@ -78,8 +78,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/18/800/450",
         author: "Ewell Mueller",
         categories: ['A life full of love'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 9,
@@ -88,8 +88,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/19/800/450",
         author: "Demetrius Corkery",
         categories: ['The beauty of simplicity'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 10,
@@ -98,8 +98,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/20/800/450",
         author: "Eleanora Price",
         categories: ['The joy of family'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 11,
@@ -108,8 +108,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/21/800/450",
         author: "Marcel Jones",
         categories: ['A life full of love', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 12,
@@ -118,8 +118,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/22/800/450",
         author: "Assunta Rath",
         categories: ['The beauty of simplicity'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 13,
@@ -128,8 +128,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/23/800/450",
         author: "Trace Douglas",
         categories: ['The joy of family', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 14,
@@ -138,8 +138,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/24/800/450",
         author: "Enoch Lynch",
         categories: ['A life full of love'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 15,
@@ -148,8 +148,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/25/800/450",
         author: "Jeanne Halvorson",
         categories: ['The beauty of simplicity'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 16,
@@ -158,8 +158,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/26/800/450",
         author: "Trycia Fadel",
         categories: ['The joy of family'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 17,
@@ -168,8 +168,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/27/800/450",
         author: "Bradford Prohaska",
         categories: ['Finding peace in nature', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 18,
@@ -178,8 +178,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/28/800/450",
         author: "Arely Skiles",
         categories: ['The beauty of simplicity'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 19,
@@ -188,8 +188,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/29/800/450",
         author: "Gust Purdy",
         categories: ['Laughter is the best medicine'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 20,
@@ -198,8 +198,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/30/800/450",
         author: "Lenna Renner",
         categories: ['The power of positive thinking', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 21,
@@ -208,8 +208,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/31/800/450",
         author: "Doyle Ernser",
         categories: ['Finding peace in nature'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 22,
@@ -218,8 +218,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/32/800/450",
         author: "Tressa Weber",
         categories: ['Finding peace in nature', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 23,
@@ -228,8 +228,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/33/800/450",
         author: "Felicity O'Reilly",
         categories: ['Laughter is the best medicine'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 24,
@@ -238,8 +238,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/34/800/450",
         author: "Jocelyn Schuster",
         categories: ['Laughter is the best medicine'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 25,
@@ -248,8 +248,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/35/800/450",
         author: "Edwina Ernser",
         categories: ['The power of positive thinking'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 26,
@@ -258,8 +258,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/36/800/450",
         author: "Griffin Braun",
         categories: ['The power of positive thinking', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 27,
@@ -268,8 +268,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/37/800/450",
         author: "Piper Schowalter",
         categories: ['Laughter is the best medicine'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 28,
@@ -278,8 +278,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/38/800/450",
         author: "Kody Terry",
         categories: ['The power of positive thinking', 'Embracing imperfection'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 29,
@@ -288,8 +288,8 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/39/800/450",
         author: "Macy Greenfelder",
         categories: ['Laughter is the best medicine'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     },
     {
         id: 30,
@@ -298,7 +298,7 @@ export const POSTS: IPost[] = [
         featuredImgUrl: "https://picsum.photos/seed/40/800/450",
         author: "Maurine Stracke",
         categories: ['The power of positive thinking'],
-        createdAt:'',
-        updatedAt:''
+        createdAt:'2023-01-04T20:56:36.223Z',
+        updatedAt:'2023-01-04T20:56:36.223Z'
     }
 ]
