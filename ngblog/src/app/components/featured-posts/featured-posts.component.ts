@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IPost } from 'src/app/model/i-post';
-// import { POSTS } from 'src/app/data/mock-posts';
+// import { MOCK_POSTS } from 'src/app/data/mock-posts';
 import { BlogService } from 'src/app/services/blog.service';
 
 @Component({

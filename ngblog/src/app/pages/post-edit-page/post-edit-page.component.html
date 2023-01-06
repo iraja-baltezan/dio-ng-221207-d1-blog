@@ -1,0 +1,26 @@
+<section class="post-editor">
+    <header class="header">
+        <h1 class="title">
+            Edit post #{{post?.id}}
+        </h1>
+
+    </header>
+    <div class="body">
+        {{post?.body}}
+    </div>
+    <footer class="footer">
+        <app-button
+            *ngIf="post"
+            [routerLink]="['/post', post.id, 'edit']"
+            iconSrc="/assets/img/close.svg"
+        >
+            Cancel
+        </app-button>
+        <app-button
+            iconSrc="/assets/img/check.svg"
+            (click)="savePost()"
+        >
+            Save
+        </app-button>
+    </footer>
+</section>

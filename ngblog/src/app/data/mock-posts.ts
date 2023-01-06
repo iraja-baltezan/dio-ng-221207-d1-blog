@@ -1,6 +1,6 @@
 import { IPost } from "../model/i-post";
 
-export const POSTS: IPost[] = [
+export const MOCK_POSTS: IPost[] = [
     {
         id: 1,
         title: "His mother had always taught him",
@@ -301,4 +301,6 @@ export const POSTS: IPost[] = [
         createdAt:'2023-01-04T20:56:36.223Z',
         updatedAt:'2023-01-04T20:56:36.223Z'
     }
-]
+];
+
+export const MemDbTablePosts: IPost[] = MOCK_POSTS;

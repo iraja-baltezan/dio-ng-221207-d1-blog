@@ -8,7 +8,8 @@ const EXCERPT_LENGTH = 100;
 })
 export class PostExcerptPipe implements PipeTransform {
 
-  transform(value: string, length: number): string {
+  transform(value: string | undefined, length: number): string {
+    if (!value) return '';
     let result: string = value;
     if (value.length > EXCERPT_LENGTH)
       result = value.substring(0, EXCERPT_LENGTH);

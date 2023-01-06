@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { POSTS } from 'src/app/data/mock-posts';
+import { MOCK_POSTS } from 'src/app/data/mock-posts';
 import { IPost } from 'src/app/model/i-post';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+import { BlogService } from 'src/app/services/blog.service';
 
 @Component({
   selector: 'app-post-page',
@@ -9,9 +12,22 @@ import { IPost } from 'src/app/model/i-post';
 })
 export class PostPageComponent {
 
-  post: IPost = POSTS[0];
+  id?: number;
+  post?: IPost;
 
-  ngOnInit(){
+  constructor(
+    private blogService: BlogService,
+    private route: ActivatedRoute,
+  ) { }
 
+  ngOnInit() {
+    this.route.paramMap.pipe(
+      switchMap(params => {
+        this.id = Number(params.get('id'));
+        return this.blogService
+          .getPostById(this.id);
+      })
+    )
+    .subscribe(post => this.post = post);
   }
 }
