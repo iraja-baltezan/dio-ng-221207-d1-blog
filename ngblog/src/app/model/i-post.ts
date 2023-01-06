@@ -1,3 +1,4 @@
+import {ICategory} from './i-category';
 export interface IPost {
     id: number;
     title: string;
