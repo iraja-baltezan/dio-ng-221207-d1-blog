@@ -19,7 +19,7 @@ export class FeaturedPostsComponent {
 
   getFeaturedPosts(): void {
     this.blogService
-      .getFeaturedPosts()
+      .getPostsByCategoryTitle('Featured')
       .subscribe(posts => this.posts = posts);
   }
 
