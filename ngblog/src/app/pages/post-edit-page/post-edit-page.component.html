@@ -1,26 +1,131 @@
 <section class="post-editor">
     <header class="header">
         <h1 class="title">
-            Edit post #{{post?.id}}
+            Edit post #{{post.id}}
         </h1>
-
+        <ul class="time-records">
+            <li class="record">
+                Created at: <span>{{post.createdAt | date:'LL/MM/YYYY HH:mm'}}</span>
+            </li>
+            <li class="record">
+                Updated at: <span>{{post.updatedAt | date:'LL/MM/YYYY HH:mm'}}</span>
+            </li>
+        </ul>
     </header>
-    <div class="body">
-        {{post?.body}}
-    </div>
-    <footer class="footer">
-        <app-button
-            *ngIf="post"
-            [routerLink]="['/post', post.id, 'edit']"
-            iconSrc="/assets/img/close.svg"
-        >
-            Cancel
-        </app-button>
-        <app-button
-            iconSrc="/assets/img/check.svg"
-            (click)="savePost()"
-        >
-            Save
-        </app-button>
-    </footer>
+    <form
+        [formGroup]="postForm"
+        (ngSubmit)="savePost()"
+        class="post-form"
+    >
+        <div class="input-box">
+            <label
+                for="title"
+                class="label"
+            >
+                Title
+            </label>
+            <input
+                type="text"
+                formControlName="title"
+                class="input"
+                id="title"
+                placeholder="Title of post"
+            >
+        </div>
+
+        <div class="input-box">
+            <label
+                for="body"
+                class="label"
+            >Content body</label>
+            <textarea
+                id="body"
+                formControlName="body"
+                class="textarea"
+                placeholder="Contents of post..."
+                cols="30"
+                rows="10"
+            ></textarea>
+        </div>
+        <div class="input-box">
+            <label
+                for="author"
+                class="label"
+            >
+                Author
+            </label>
+            <input
+                type="text"
+                formControlName="author"
+                class="input"
+                id="author"
+                placeholder="Name of author..."
+            >
+        </div>
+        <div class="input-box">
+            <label
+                for="categories"
+                class="label"
+            >
+                Categories
+            </label>
+            <select
+                id="categories"
+                class="select"
+                multiple
+                formControlName="categories"
+            >
+                <option
+                    [ngValue]="null"
+                    disabled
+                >Choose the post categories</option>
+                <option
+                    *ngFor="let category of categories"
+                    [ngValue]="category"
+                >
+                    {{ category }}
+                </option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label
+                for="featured-img-url"
+                class="label"
+            >
+                Featured image
+            </label>
+            <input
+                type="text"
+                formControlName="featuredImgUrl"
+                class="input"
+                id="featured-img-url"
+                placeholder="URL of post featured image..."
+            >
+            <img
+                [src]="postForm.value.featuredImgUrl"
+                alt="Featured image"
+                class="img"
+            >
+        </div>
+        <footer class="footer">
+            <p class="status">Form Status: {{ postForm.status }}</p>
+
+            <app-button
+                iconSrc="/assets/img/close.svg"
+                (click)="goBack()"
+                class="button"
+                type="button"
+            >
+                Cancel
+            </app-button>
+            <app-button
+                iconSrc="/assets/img/check.svg"
+                type="submit"
+                [disabled]="!postForm.valid"
+                class="button"
+            >
+                Save
+            </app-button>
+        </footer>
+    </form>
 </section>

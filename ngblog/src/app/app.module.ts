@@ -10,7 +10,7 @@ import { FeaturedPostsComponent } from './components/featured-posts/featured-pos
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SvgTitleComponent } from './components/svg-title/svg-title.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { PostThumbnailComponent } from './components/post-thumbnail/post-thumbnail.component';
 import { PostExcerptPipe } from './pipes/post-excerpt.pipe';
 import { ButtonComponent } from './components/button/button.component';
@@ -34,7 +34,7 @@ import { PostEditPageComponent } from './pages/post-edit-page/post-edit-page.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests

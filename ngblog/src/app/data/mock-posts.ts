@@ -303,4 +303,4 @@ export const MOCK_POSTS: IPost[] = [
     }
 ];
 
-export const MemDbTablePosts: IPost[] = MOCK_POSTS;
+// export const MemDbTablePosts: IPost[] = MOCK_POSTS;

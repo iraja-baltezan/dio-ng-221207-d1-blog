@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { catchError, Observable, of, throwError } from 'rxjs';
+import { catchError, Observable, of, tap, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { IPost } from '../model/i-post';
+import { ICategory } from '../model/i-category';
 
 const FEATURED_CATEGORY_NAME = 'Featured';
 
@@ -10,7 +11,13 @@ const FEATURED_CATEGORY_NAME = 'Featured';
 })
 export class BlogService {
 
-  private postsUrl = 'api/posts'; // URL para a api web
+  // URL para a api web
+  private postsUrl = 'api/posts';
+  private categoriesUrl = 'api/categories';
+
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
 
   constructor(
     private http: HttpClient
@@ -27,34 +34,53 @@ export class BlogService {
     const options = title ? { params: new HttpParams().set('category', title) } : {};
     return this.http
       .get<IPost[]>(this.postsUrl, options)
-      .pipe(catchError(this.handleError));
+      .pipe(
+        catchError(this.handleError<IPost[]>('getPostsByCategoryTitle'))
+      );
   }
-
-  // getFeaturedPosts(limitCount: number = 5): Observable<IPost[]> {
-    // let featuredPosts: IPost[] = [];
-    // MOCK_POSTS.map(post => {
-    //   if (
-    //     post.categories.includes(FEATURED_CATEGORY_NAME)
-    //     &&
-    //     (featuredPosts.length < limitCount)
-    //   ) {
-    //     featuredPosts.push(post);
-    //   }
-    // });
-    // return of(featuredPosts);
-  // }
 
   getPostById(id: number): Observable<IPost> {
-    // const searchResult = MOCK_POSTS.find(post => post.id === id);
-    // return of(searchResult);
     const url = `${this.postsUrl}/${id}`;
-    return this.http.get<IPost>(url).pipe(catchError(this.handleError));
+    return this.http
+      .get<IPost>(url)
+      .pipe(
+        catchError(this.handleError<IPost>('getPostById'))
+      );
   }
 
-  private handleError(error: any) {
-    // Em um aplicativo do mundo real,
-    // podemos enviar o erro para a infraestrutura de registro remoto
-    // e reformatar para consumo do usuário
-    return throwError(() => new Error(error));
+  getCategories(): Observable<ICategory[]> {
+    return this.http.get<ICategory[]>(this.categoriesUrl)
+  }
+
+  updatePost(post: IPost) {
+    console.log(1,post)
+    return this.http.put<IPost>(this.postsUrl, post, this.httpOptions)
+      .pipe(
+        tap(_ => {this.log(`Updated post id=${post.id}`)}),
+        catchError(this.handleError<any>('updatePost'))
+      )
+      .subscribe(response=>console.log(2,response))
+  }
+
+  /**
+   * Lida com a operação Http que falhou.
+   * Permite ao app continuar a execução.
+   *
+   * @param operation - nome da operação que falhou
+   * @param result - valor opcional para retornar como resultado observável
+   */
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+
+      this.log(`${operation} failed: ${error.message}`);
+
+      //  Deixa o app continuar em execução retornando um resultado vazio.
+      return of(result as T);
+    };
+  }
+
+  /** Registra uma mensagem do BlogService */
+  private log(message: string) {
+    console.log(`BlogService: ${message}`);
   }
 }
