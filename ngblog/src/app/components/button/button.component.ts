@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-type TRouterLinkParam = string | number | object;
+// type TRouterLinkParam = string | number | object;
 
 @Component({
   selector: 'app-button',
@@ -8,8 +8,14 @@ type TRouterLinkParam = string | number | object;
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
+  // @Input()
+  // routerLink?: string | TRouterLinkParam[] | null;
+
   @Input()
-  routerLink?: string | TRouterLinkParam[] | null;
+  disabled: boolean = false;
+
+  @Input()
+  type: string = 'link';
 
   @Input()
   iconSrc?: string;

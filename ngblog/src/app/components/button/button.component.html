@@ -1,8 +1,8 @@
-<a class="button-link" [routerLink]="routerLink">
+<button class="button" [disabled]="disabled" [type]="type">
     <img
         class="icon"
         *ngIf="iconSrc"
         [attr.src]="[iconSrc]"
     />
     <span class="content"><ng-content></ng-content></span>
-</a>
+</button>
